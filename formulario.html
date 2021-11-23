@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo"> 
+
+        <h1 id="titulo">Cadastro de Clientes Previdenciários</h1>
+        <p id="subtitulo"> <strong>Complete suas informações</strong></p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"> <stront>Nome</stront></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"> <stront>Sobrenome</stront></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"required>
+    
+            
+
+        </fieldset> 
+        
+        <fieldset class="campo">
+
+        </div>
+
+        
+        <div class="campo">
+            <label for="nascimento"><strong>Data de nascimento</strong></label>
+            <input id="date" type="date">
+
+        </div>
+
+        <div class="campo">
+            
+
+        </div>
+
+        <div class="campo">
+            <label for="telefone">telefone</label>
+            <input type="number" name="telefone" id="telefone"required>
+
+        </div>
+
+        </fieldset>
+        <div class="campo">
+            <label><strong>Você já deu entrada Administrativamente no INSS</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+             
+            </select>
+        </div> 
+
+        <div class="campo">
+
+            <label><strong>O que você precisa?</strong></label>
+
+            <label>
+                <input type="radio" name="cliente" value="Aposentadoria urbana" checked>Aposentadoria Urbana
+            </label>
+
+            <label>
+                <input type="radio" name="cliente" value="auxilio_doença" > Auxilio-doença
+            </label>
+
+            <label>
+                <input type="radio" name="cliente" value="Aposentadoria rural">Aposentadoria rural
+            </label>
+
+            <label>
+                <input type="radio" name="cliente" value="BPC">BPC
+            </label>
+
+            <label>
+                <input type="radio" name="cliente" value="Auxilio_acidentario"> Auxílio-Acidentário
+            </label>
+
+        </div>
+
+        <div class="campo">
+            <label><strong>Sexo</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Prefiro não declarar</option>
+            </select>
+        </div> 
+
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione por onde prefere ser contatado:</strong></label><br><br>
+
+                <input type="checkbox" id="whatsapp" name="contato1" value="Telefone">
+                <label for="tecnologia1">Telefone</label>
+
+                <input type="checkbox" id="e-mail" name="contato2" value="e-mail">
+                <label for="tecnologia2">e-mail</label>
+
+                <input type="checkbox" id="ligação" name="contato3" value="Ligação">
+                <label for="tecnologia3">Ligação</label>
+
+                <input type="checkbox" id="Ligação em vídeo" name="contato3" value="Contato por vídeo">
+                <label for="tecnologia4">Contato por vídeo</label>
+
+                <input type="checkbox" id="Tele-consulta" name="contato4" value="Entrevista virtual">
+                <label for="tecnologia5">Entrevista virtual</label>
+
+                <input type="checkbox" id="Pessoalmente" name="contato5" value="Visita pessoal">
+                <label for="tecnologia6">Visita pessoal</label>
+             
+
+            </div>
+        </fieldset>
+
+        <div class="campo"><br>
+            <label><strong>Conte um pouco do seu caso</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <div>
+
+        <button title="submite" id="botao">Concluído</button>
+
+        </div>    
+    </form>
+    
+</body>
+</html>
